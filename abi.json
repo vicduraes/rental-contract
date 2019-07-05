@@ -1,0 +1,176 @@
+const ABI = [
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "name": "rentalValue",
+                    "type": "uint256"
+                }
+            ],
+            "name": "newRentalValue",
+            "type": "event"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "payment",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": true,
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "name": "indexRentalValue",
+                    "type": "uint256"
+                }
+            ],
+            "name": "readjustRentalValue",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "name": "paramLocator",
+                    "type": "address"
+                },
+                {
+                    "name": "paramRenter",
+                    "type": "address"
+                },
+                {
+                    "name": "paramRentalValue",
+                    "type": "uint256"
+                },
+                {
+                    "name": "paramAddressHome",
+                    "type": "string"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "archive",
+            "outputs": [
+                {
+                    "name": "date",
+                    "type": "uint256"
+                },
+                {
+                    "name": "valuePayment",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getRenter",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "locator",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "property",
+            "outputs": [
+                {
+                    "name": "city",
+                    "type": "string"
+                },
+                {
+                    "name": "numberRoom",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "receiptPayment",
+            "outputs": [
+                {
+                    "name": "date",
+                    "type": "uint256"
+                },
+                {
+                    "name": "valuePayment",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "rentalValue",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ];
