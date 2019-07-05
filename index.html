@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> 🏘️ Vic's real estate</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 class="text-center"> 🏘️ Welcome to Vic's real estate </h1>
+
+        <div class="col-12">
+          <div class="panel panel-primary col-6">
+            <div class="panel-heading">I am a locator</div>
+            <div>
+              <a href="#" class="panel-body" onclick="showRentalValue()"> Rental Value </a>
+              <p id="rentalValue"></p>
+            </div>
+
+            <div>
+              <a href="#" class="panel-body" onclick="showRenter()"> View the renter </a>
+              <p id="viewRenter"></p>
+            </div>
+
+            <div>
+              <label href="#" class="panel-body"> Readjust Rental Value </label>
+              <input type="number" placeholder="Set the % here" id="newIndex"/>
+              <a href="#" class="btn btn-primary" onclick="newRentalValue()">👍</a>
+              <p id="loading"></p>
+              <!-- <p id="rentalValue"></p> -->
+            </div>
+            
+          </div>
+
+          <div class="panel panel-info col-6">
+            <div class="panel-heading">I am a renter</div>
+          </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Ether.js lib -->
+        <script charset="utf-8" src="https://cdn.ethers.io/scripts/ethers-v4.min.js" type="text/javascript"></script>
+        <script src="accounts.json"></script>
+        <script src="abi.json"></script>
+        <script src="smartContract.js"></script>
+    </body>
+</html>
